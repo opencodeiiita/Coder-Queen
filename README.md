@@ -15,7 +15,10 @@ A flutter news app which display categorized news as per the user's interests.
 
 ## Claim an Issue
 Comment on the issue. In case of no activity on the issue even after 2 days, the issue will be reassigned. If you have difficulty approaching the issue, feel free to ask on our slack channel.
-Feel free to ask any queries.Go here for flutternewsApp https://discord.com/channels/885149696249708635/892318000793935872  & for newsweb here https://discord.com/channels/885149696249708635/892318028484706324
+Feel free to ask any queries.
+Go here for 
++ flutternewsApp https://discord.com/channels/885149696249708635/892318000793935872  
++ newsweb here https://discord.com/channels/885149696249708635/892318028484706324
 
 ## Communication
 If you have any queries or suggestions, please use the discord channel of **CODE LIKE A GIRL**.
