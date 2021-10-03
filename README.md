@@ -1,7 +1,7 @@
 # Coder_Queen
 
 
-## Projects
+There are two projects in this repository follow as :
 
 ## 1. WebD Frontend:
 A basic website (only frontend), which display curated hot news, and tweets as per the user's interests.
