@@ -10,7 +10,14 @@ body {
 	background: aquamarine;
 	/* min-height: 200vh; */
 }
-
+/* styling the scroll bar*/
+::-webkit-scrollbar{
+	width: 16px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: teal;
+	border-radius: 50px;
+}
 /* /////NAV BAR////// */
 header {
 	position: fixed;
