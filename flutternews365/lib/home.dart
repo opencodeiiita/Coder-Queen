@@ -31,16 +31,13 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-
-  ];
-
-
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const List<Widget> _widgetOptions = <Widget>[];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: Colors.blueGrey,
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -48,8 +45,26 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(
+              Icons.search,
+              color: Colors.black,
+            ),
             label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.bookmark,
+              color: Colors.black,
+            ),
+            label: 'Bookmark',
+          ),
+          BottomNavigationBarItem(
+            icon: CircleAvatar(
+              radius: 15.0,
+              backgroundImage: NetworkImage(
+                  'https://www.kindpng.com/picc/m/105-1055656_account-user-profile-avatar-avatar-user-profile-icon.png'),
+            ),
+            label: 'Profile',
           ),
         ],
         selectedItemColor: Colors.amber[800],
