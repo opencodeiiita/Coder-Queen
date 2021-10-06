@@ -1,8 +1,12 @@
+body {
+  margin: 0;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
   justify-content: center;
-  margin-top:1px ;
+  margin-top: 0 ;
 }
 .topnav a {
   float:left;
