@@ -61,9 +61,9 @@ function displayNews(response) {
   let h_6 = document.querySelector(".h-6");
   let iconElement_6 = document.querySelector("#icon-6");
   let url_6 = document.querySelector(".url-6");
-  h_6.innerHTML = response.data.articles[5].title;
-  iconElement_6.setAttribute("src", response.data.articles[5].urlToImage);
-  url_6.setAttribute("href", response.data.articles[5].url);
+  h_6.innerHTML = response.data.articles[9].title;
+  iconElement_6.setAttribute("src", response.data.articles[9].urlToImage);
+  url_6.setAttribute("href", response.data.articles[9].url);
 }
 let apiUrl = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fc207f5e0f96464d83269deab1a32489`;
 axios.get(apiUrl).then(displayNews);
