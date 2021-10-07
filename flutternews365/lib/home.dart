@@ -69,6 +69,50 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ],
         selectedItemColor: Colors.amber[800],
       ),
+
+      //Drawer
+      drawer: Drawer(
+          child: ListView(
+        // Important: Remove any padding from the ListView.
+            padding: EdgeInsets.zero,
+            children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.purpleAccent,
+              ),
+              child: Text('Flutter news 365'),
+            ),
+            ListTile(
+              title: const Text('Sports'),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            ListTile(
+              title: const Text('Tech'),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            ListTile(
+              title: const Text('Politics'),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            ListTile(
+              title: const Text('Policy'),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
