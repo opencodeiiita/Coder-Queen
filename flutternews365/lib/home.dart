@@ -1,4 +1,4 @@
-// ignore_for_file: import_of_legacy_library_into_null_safe, use_key_in_widget_constructors
+// ignore_for_file: import_of_legacy_library_into_null_safe, use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
