@@ -62,6 +62,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
+
+
+
+  assets:
+    - assets/icons/
+    - assets/user.png
+    - assets/news.png
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -85,6 +94,25 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  fonts:
+      - family: Times
+        fonts:
+          - asset: assets/fonts/times_news_roman/Times New Roman 400.ttf
+            weight: 400
+          - asset: assets/fonts/times_news_roman/Times New Roman Gras 700.ttf
+            weight: 700
+      - family: Avenir
+        fonts:
+          - asset: assets/fonts/avenir/AvenirNextLTPro-Regular.otf
+            weight: 400
+          - asset: assets/fonts/avenir/AvenirNextLTPro-Demi.otf
+            weight: 500
+          - asset: assets/fonts/avenir/AvenirNextLTPro-Demi.otf
+            weight: 600
+          - asset: assets/fonts/avenir/avenir-next-lt-pro-bold.otf
+            weight: 700
+      - family: League
+        fonts:
+          - asset: assets/fonts/league_spartan/LeagueSpartan-Bold.otf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

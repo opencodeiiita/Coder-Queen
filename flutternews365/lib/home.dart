@@ -21,12 +21,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       
       body: <Widget>[
         Container(
           color: Colors.blue,
         ),
         Container(
-          color: Colors.red,
+          color: Colors.red, 
         ),
         Container(
           color: Colors.yellow,
