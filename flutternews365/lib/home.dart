@@ -18,16 +18,20 @@ class _HomeState extends State<Home> {
     });
   }
 
+  // function to open drawer
+  void openSideDrawer(BuildContext ctx) {
+    Scaffold.of(ctx).openDrawer();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       
       body: <Widget>[
         Container(
           color: Colors.blue,
         ),
         Container(
-          color: Colors.red, 
+          color: Colors.red,
         ),
         Container(
           color: Colors.yellow,
@@ -193,6 +197,9 @@ class _HomeState extends State<Home> {
               Material(
                 borderRadius: BorderRadius.circular(500),
                 child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
                   borderRadius: BorderRadius.circular(500),
                   splashColor: Colors.black45,
                   child: CircleAvatar(
@@ -204,24 +211,24 @@ class _HomeState extends State<Home> {
               ),
               Expanded(
                   child: Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  height: 65,
-                  width: MediaQuery.of(context).size.width,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      'v1.0.1',
-                      style: TextStyle(
-                        fontFamily: 'Avenir',
-                        fontSize: 20,
-                        color: const Color(0xffffffff),
+                    alignment: Alignment.bottomCenter,
+                    child: Container(
+                      height: 65,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.black,
+                      child: Center(
+                        child: Text(
+                          'v1.0.1',
+                          style: TextStyle(
+                            fontFamily: 'Avenir',
+                            fontSize: 20,
+                            color: const Color(0xffffffff),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
-                      textAlign: TextAlign.center,
                     ),
-                  ),
-                ),
-              ))
+                  ))
             ],
           ),
         ),
