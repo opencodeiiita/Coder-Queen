@@ -6,12 +6,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class Home extends StatefulWidget {
   @override
-
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-
   int currentIndex = 0;
 
   void changePage(int index) {
@@ -23,15 +21,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar : AppBar(
+        leading: IconButton(
+                          icon: Icon(Icons.widgets_rounded, color: Colors.white,size: 22),
+                          onPressed: () {
 
-      // the following code should be added in Appbar() after appbar: will be created
-      //   leading: IconButton(
-      //             icon: Icon(Icons.widgets_rounded, color: Colors.white,size: 22),
-      //             onPressed: () {
-      //              functionality to open the drawer
-      //             },
-      // ),
-
+                          },
+              ),
+        backgroundColor: Colors.blue,
+        title: Center(child: Text('News App')),
+        ),
       body: <Widget>[
         Container(
           color: Colors.blue,
@@ -119,7 +118,7 @@ class _HomeState extends State<Home> {
       ),
 
       //Drawer
-      drawer: SizedBox(
+      drawer: Container(
         width: MediaQuery.of(context).size.width / 1.25,
         child: Drawer(
           child: Column(
@@ -128,7 +127,7 @@ class _HomeState extends State<Home> {
                 height: 30,
               ),
               DrawerHeader(
-                child: SizedBox(
+                child: Container(
                     height: 142,
                     width: MediaQuery.of(context).size.width,
                     child: Image.asset(
