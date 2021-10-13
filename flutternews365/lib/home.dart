@@ -18,6 +18,11 @@ class _HomeState extends State<Home> {
     });
   }
 
+  // function to open drawer
+  void openSideDrawer(BuildContext ctx) {
+    Scaffold.of(ctx).openDrawer();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +35,8 @@ class _HomeState extends State<Home> {
               ),
         backgroundColor: Colors.blue,
         title: Center(child: Text('News App')),
-        ),
+      ),
+
       body: <Widget>[
         Container(
           color: Colors.blue,
@@ -202,6 +208,9 @@ class _HomeState extends State<Home> {
               Material(
                 borderRadius: BorderRadius.circular(500),
                 child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
                   borderRadius: BorderRadius.circular(500),
                   splashColor: Colors.black45,
                   child: CircleAvatar(
