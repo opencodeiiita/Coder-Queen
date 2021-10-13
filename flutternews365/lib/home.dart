@@ -34,8 +34,8 @@ class _HomeState extends State<Home> {
         ),
         Container(
           color: Colors.yellow,
-        Container(
         ),
+        Container(
           color: Colors.green,
         ),
       ][currentIndex],
