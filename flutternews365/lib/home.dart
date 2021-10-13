@@ -25,12 +25,11 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold
-
-      appBar : AppBar(
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Center(child: Text('News App')),
-        ),
+      ),
 
       body: <Widget>[
         Container(
@@ -217,24 +216,24 @@ class _HomeState extends State<Home> {
               ),
               Expanded(
                   child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Container(
-                      height: 65,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.black,
-                      child: Center(
-                        child: Text(
-                          'v1.0.1',
-                          style: TextStyle(
-                            fontFamily: 'Avenir',
-                            fontSize: 20,
-                            color: const Color(0xffffffff),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
+                alignment: Alignment.bottomCenter,
+                child: Container(
+                  height: 65,
+                  width: MediaQuery.of(context).size.width,
+                  color: Colors.black,
+                  child: Center(
+                    child: Text(
+                      'v1.0.1',
+                      style: TextStyle(
+                        fontFamily: 'Avenir',
+                        fontSize: 20,
+                        color: const Color(0xffffffff),
                       ),
+                      textAlign: TextAlign.center,
                     ),
-                  ))
+                  ),
+                ),
+              ))
             ],
           ),
         ),
