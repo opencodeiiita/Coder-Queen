@@ -22,6 +22,12 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar : AppBar(
+        leading: IconButton(
+                          icon: Icon(Icons.widgets_rounded, color: Colors.white,size: 22),
+                          onPressed: () {
+
+                          },
+              ),
         backgroundColor: Colors.blue,
         title: Center(child: Text('News App')),
         ),
@@ -30,7 +36,7 @@ class _HomeState extends State<Home> {
           color: Colors.blue,
         ),
         Container(
-          color: Colors.red, 
+          color: Colors.red,
         ),
         Container(
           color: Colors.yellow,
