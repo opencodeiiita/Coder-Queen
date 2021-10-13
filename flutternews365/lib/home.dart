@@ -21,7 +21,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       
+      appBar : AppBar(
+        backgroundColor: Colors.blue,
+        title: Center(child: Text('News App')),
+        ),
       body: <Widget>[
         Container(
           color: Colors.blue,
@@ -31,8 +34,8 @@ class _HomeState extends State<Home> {
         ),
         Container(
           color: Colors.yellow,
-        ),
         Container(
+        ),
           color: Colors.green,
         ),
       ][currentIndex],
