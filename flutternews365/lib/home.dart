@@ -124,7 +124,7 @@ class _HomeState extends State<Home> {
       ),
 
       //Drawer
-      drawer: Container(
+      drawer: SizedBox(
         width: MediaQuery.of(context).size.width / 1.25,
         child: Drawer(
           child: Column(
@@ -133,8 +133,8 @@ class _HomeState extends State<Home> {
                 height: 30,
               ),
               DrawerHeader(
-                child: Container(
-                    height: 142,
+                child: SizedBox(
+                    height: 100,
                     width: MediaQuery.of(context).size.width,
                     child: Image.asset(
                       "assets/news.png",
@@ -156,9 +156,10 @@ class _HomeState extends State<Home> {
                 child: Text(
                   'Profile',
                   style: TextStyle(
-                    fontFamily: 'Avenir',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Sans',
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black.withOpacity(0.8),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -171,9 +172,10 @@ class _HomeState extends State<Home> {
                 child: Text(
                   'Settings',
                   style: TextStyle(
-                    fontFamily: 'Avenir',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Sans Serif',
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black.withOpacity(0.8),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -184,9 +186,10 @@ class _HomeState extends State<Home> {
               Text(
                 'About',
                 style: TextStyle(
-                  fontFamily: 'Avenir',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
+                  fontFamily: 'Sans',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black.withOpacity(0.8),
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -194,13 +197,35 @@ class _HomeState extends State<Home> {
                 height: 45,
               ),
               Text(
-                'Log Out',
+                'Contact us',
                 style: TextStyle(
-                  fontFamily: 'Avenir',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
+                  fontFamily: 'Sans',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black.withOpacity(0.8),
                 ),
                 textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 45,
+              ),
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    currentIndex = 3;
+                  });
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  'Log Out',
+                  style: TextStyle(
+                    fontFamily: 'Sans',
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black.withOpacity(0.8),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
               SizedBox(
                 height: 45,
@@ -208,9 +233,6 @@ class _HomeState extends State<Home> {
               Material(
                 borderRadius: BorderRadius.circular(500),
                 child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).pop();
-                  },
                   borderRadius: BorderRadius.circular(500),
                   splashColor: Colors.black45,
                   child: CircleAvatar(
@@ -220,6 +242,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
+              
               Expanded(
                   child: Align(
                 alignment: Alignment.bottomCenter,
@@ -232,7 +255,7 @@ class _HomeState extends State<Home> {
                       'v1.0.1',
                       style: TextStyle(
                         fontFamily: 'Avenir',
-                        fontSize: 20,
+                        fontSize: 18,
                         color: const Color(0xffffffff),
                       ),
                       textAlign: TextAlign.center,
