@@ -187,6 +187,7 @@ header.sticky .menuToggle {
 	width: 100%;
 	position: relative;
 	background-color: #070617;
+	top: 80vh;
 }
 .footer .col {
 	width: 30vw;

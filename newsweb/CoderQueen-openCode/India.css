@@ -1,8 +1,8 @@
 body {
   margin: 0;
 }
-
-.topnav {
+ 
+/*.topnav {
   background-color: #333;
   overflow: hidden;
   justify-content: center;
@@ -59,4 +59,4 @@ footer {
   display: inline-block;
   vertical-align: top;
   float: right;
-}
+}*/
