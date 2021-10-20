@@ -26,19 +26,21 @@ body {
   background-color: #04AA6D;
   color: white;
 }
-footer {
-  position: relative;
-  
-  text-align: center;
-  padding: 3px;
-  background-color: #333;
-  color: white;
-  margin-top: 530px ;
-  font-size: 30px;
-  height: 70px;
-  margin-bottom: 0px;
-  float: center;
-  padding-bottom: 25px;
+footer{
+	
+  /*display: flex;*/
+  margin: 0px;
+	padding: 0px;
+	left: 0;
+  right: 0;
+  bottom: 0;
+	position: absolute;
+	padding: 25px 10px;
+	text-align: center;
+	color: white;
+	width: 100vw;
+	background-color:#333;
+
 }
 .navbar-brand {
   position: relative;
