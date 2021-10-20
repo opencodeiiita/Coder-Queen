@@ -122,7 +122,7 @@ header nav ul li a.active {
 	right: 100px;
 	width: 50px;
 	height: 50px;
-	background-color: #000;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png);
 	z-index: 2;
 	background-size: 30px;
 	background-repeat: no-repeat;
@@ -135,9 +135,9 @@ header.sticky .menuToggle {
 	filter: invert(1);
 }
 .menuToggle.active {
-	background: #000 url(https://frezaeistudio.ir/wp-content/uploads/2020/12/close.png);
+	background: url(https://cdn3.iconfinder.com/data/icons/ui-user-interface-4/32/UI-07-512.png);
 	z-index: 3;
-	background-size: 25px;
+	background-size: 22px;
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
